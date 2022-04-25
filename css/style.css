@@ -1,9 +1,8 @@
 :root{
     --primary-text-color: #757575;
-    --h-color:#212121;
+    --title-color:#212121;
     --accent-color: #2196F3;
     --logo-color: #000000;
-    --what-d-bgc: #E5E5E5 ;
     --sec-hero-bgc:#2F303A;
     --body-bgc: #FFFFFF;
     --our-team-bgc: #F5F4FA;
@@ -31,7 +30,7 @@ body {
 
 
 .logo{
-    color: var(--logo-color);
+    color:  var(--accent-color);
 
     text-decoration: none;
 
@@ -41,8 +40,8 @@ body {
     line-height: 1.17;
   
 }
-.logo span{
-    color:  var(--accent-color);
+.logo-color{
+ color: var(--logo-color);
 }
 
 .nav-head{
@@ -50,17 +49,20 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-.nav-head a{
-    color: var(--h-color);
+
+    color: var(--title-color);
     text-decoration: none;
 }
-.nav-head a:hover, 
-.nav-head a:focus{
-    color:var(--accent-color);
+
+.nav-head:hover, 
+.nav-head:focus{
+   color: var(--accent-color);
 }
-.address-head{
+
+
+.address{
     color: var(--primary-text-color);
+    text-decoration: none;
 
     font-weight: 500;
     font-size: 14px;
@@ -69,30 +71,34 @@ body {
     font-style: normal;
     
 }
-.address-head a{
-    text-decoration: none;
-}
-.address-head a:hover,
-.address-head a:focus{
+
+
+.address:hover,
+.address:focus{
     color: var(--accent-color);
+}
+.address:visited{
+    color: var(--primary-text-color);
+
 }
 
 
 /* main */
 /* sec hero */
+
 .section-hero{
     background-color: var(--sec-hero-bgc);
     color:var(--body-bgc) ;
 }
-.section-hero h1{
-      font-weight: 900;
+.section-hero-title{
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.section-hero button{
+.section-hero-button{
     cursor: pointer;
     color: var(--body-bgc);
     background-color: var(--accent-color);
@@ -107,21 +113,16 @@ body {
 
 /* sec what doing */
 
-.section-what-doing{
-    background-color: var(--what-d-bgc);
-
-
-}
-.h-class{
-    color: var(--h-color);
+.what-doing-title{
+    color: var(--title-color);
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
+    
 }
-.h-class-h3{
-    color: var(--h-color);
+.biggest-title{
+    color: var(--title-color);
 
     font-weight: 700;
     font-size: 36px;
@@ -134,78 +135,84 @@ body {
 .our-team{
     background-color: var(--our-team-bgc);
 }
-.our-team h4{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.9;
+.our-team-names{
+    color: var(--title-color);
 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
 }
-.our-team .list-item{
+.our-team-card{
     background-color: var(--body-bgc);
 }
 
 /* footer */
+.logo-color-footer{
+    color: var(--body-bgc);
+}
 
 .footer{
     background-color: var(--sec-hero-bgc);
     color: var(--body-bgc);
     
 }
+.address-map{
+    color: var(--body-bgc);
 
-.footer a{
     text-decoration: none;
     font-style: normal;
-}
 
-.footer span{
+}
+.address-map:hover,
+.address-map:focus{
     color: var(--accent-color);
 }
 
-
-.footer .link{
-    color: var(--footer-contacts);
-}
-.footer .link:hover,
-.footer .link:focus{
-    color: var(--accent-color); 
-}
 
 /* -------- Portfolio ---------- */
 
 .main-portfolio {
     background-color: var(--body-bgc);
- 
 }
-.portfolio-nav button{
+
+.unvis-title{
+    display: none;}
+
+.portfolio-buttons{
+    color: var(--title-color);
+    background-color: var(--our-team-bgc);
+    cursor: pointer;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
 }
-
-.main-portfolio a{
-    text-decoration: none;
-}
-.unvis-h{
-    display: none;
-}
-.portfolio-nav button{
-    color: var(--h-color);
-    background-color: var(--our-team-bgc);
-    cursor: pointer;
-}
-.portfolio-nav button:hover,
-.portfolio-nav button:focus{
+.portfolio-buttons:hover,
+.portfolio-buttons:focus{
     background-color: var(--accent-color);
     color: var(--body-bgc);
 }
-.portfolio-expamles h2{
+
+
+.main-portfolio-links{
+    text-decoration: none;
+}
+
+
+.portfolio-name-project{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: var(--title-color);
 }
-.portfolio-expamles p{
+
+.portfolio-what-project{
+    font-style: normal;
     font-size: 16px;
     line-height: 1.88;
+
+    color: var(--primary-text-color);
 }
